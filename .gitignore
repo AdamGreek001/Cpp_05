@@ -1,0 +1,8 @@
+*.o
+*.out
+a.out
+bureaucrat
+*.a
+*_shrubbery
+.vscode/
+*.dSYM/
