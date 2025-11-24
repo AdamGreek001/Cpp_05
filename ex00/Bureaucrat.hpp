@@ -14,7 +14,6 @@ private:
 	static const int	_lowestGrade;
 
 public:
-	// Orthodox Canonical Form
 	Bureaucrat();
 	Bureaucrat(const std::string& name, int grade);
 	Bureaucrat(const Bureaucrat& other);
@@ -30,12 +29,14 @@ public:
 	void				decrementGrade();
 
 	// Nested exception classes
-	class GradeTooHighException : public std::exception {
+	class GradeTooHighException : public std::exception 
+	{
 	public:
 		virtual const char* what() const throw();
 	};
 
-	class GradeTooLowException : public std::exception {
+	class GradeTooLowException : public std::exception 
+	{
 	public:
 		virtual const char* what() const throw();
 	};
